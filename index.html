@@ -11,66 +11,186 @@
 </head>
 <body>
   <form  action="https://formspree.io/tvdenney@gmail.com" method="GET" action="#" enctype="multipart/form-data">
+    <br />
+    <br />
 
-<!-- Start First & Last Name -->
+    <!-- Start First & Last Name -->
     <div class="container">
       <div class="row">
-        <div class="form-group">
-          <h1>Hello!</h1>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Example: Orville" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Example: Redenbacher" />
+          </div>
         </div>
       </div>
     </div>
     <!-- End First & Last Name -->
-
+    <br />
     <!-- Start Email & Phone Name -->
-        <div class="container">
-          <div class="row">
-            <div class="form-group">
-
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" class="form-control" placeholder="Example: OrvilleRocks1907@gmail.com" />
           </div>
         </div>
-        <!-- End Email & Phone Name -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" class="form-control" placeholder="Example: 1-800-461-4556" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Email & Phone Name -->
+    <br />
+    <br />
+    <br />
+    <!-- Start Shipping Address Name -->
+    <div class="container"><strong>Shipping Address</strong>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" class="form-control" placeholder="Example: 1907 Orville Way" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="state" class="form-control" placeholder="Example: Orvilleville" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="street" class="form-control" placeholder="Example: Indiana" />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="state" class="form-control" placeholder="Example: 46241" />
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <optgroup>
+                <option value="US" selected>United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="FR">France</option>
+                <option value="IT">Italy</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Shipping Address Name -->
+    <br  />
+    <br  />
+    <br  />
+    <!-- Start Billing Address Name -->
+    <div class="container"><strong>Billing Address</strong>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" class="form-control" placeholder="Example: 1907 Orville Way" />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="state" class="form-control" placeholder="Example: Orvilleville" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" name="street" class="form-control" placeholder="Example: Indiana" />
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="state" class="form-control" placeholder="Example: 46241" />
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <optgroup>
+                <option value="US" selected>United States</option>
+                <option value="CA">Canada</option>
+                <option value="MX">Mexico</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="FR">France</option>
+                <option value="IT">Italy</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label>Billing Address same as Shipping Address
+            <input type="hidden" name="optin" value="no"  />
+            <input type="checkbox" id="optin" name="optin" value="yes" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Billing Address Name -->
 
-        <!-- Start Shipping Address Name -->
-            <div class="container">
-              <div class="row">
-                <div class="form-group">
+    <!-- Start Payment Information Name -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
 
-                </div>
-              </div>
-            </div>
-        <!-- End Shipping Address Name -->
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
 
-        <!-- Start Billing Address Name -->
-            <div class="container">
-              <div class="row">
-                <div class="form-group">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Payment Information Name -->
 
-                </div>
-              </div>
-            </div>
-        <!-- End Billing Address Name -->
+    <!-- Start Checkout Button Name -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-right">
+          <div class="form-group">
+            <button class="btn btn-primary btn-lrg">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- Start Payment Information Name -->
-            <div class="container">
-              <div class="row">
-                <div class="form-group">
+    <!-- End Checkout Button Name -->
 
-                </div>
-              </div>
-            </div>
-        <!-- End Payment Information Name -->
-
-        <!-- Start Checkout Button Name -->
-            <div class="container">
-              <div class="row">
-                <div class="form-group">
-
-                </div>
-              </div>
-            </div>
-        <!-- End Checkout Button Name -->
-
-    </body>
-    </html>
+  </body>
+  </html>
