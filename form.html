@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets go here. -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+<body>
+
+<form method="post" action="#" enctype="multipart/form-data">
+
+    <input type="hidden" name="type" value="tax form"  />
+
+    <label for="first-name">First Name</label><br />
+    <input type="text" id="first-name" name="first_name" value="" placeholder="Example: First Name" required />
+<br />
+    <label>
+      First Name <br />
+      <input type="text" name="first_name" value="Troy" readonly />
+    </label>
+<br />
+<br />
+  <label>
+    <input type="hidden" name="optin" value="no"  />
+    <input type="checkbox" id="optin" name="optin" value="yes" checked />
+    Receive Spam Emails
+  </label>
+
+<h4>Which answer is correct?</h4>
+<label><input type="radio" name="quiz" value="a" checked/> A</label><br />
+<label><input type="radio" name="quiz" value="b" /> B</label><br />
+<label><input type="radio" name="quiz" value="c" /> C</label><br  />
+<label><input type="radio" name="quiz" value="All" disabled="" /> All of the above</label><br  /><br />
+
+<label for="country">Country</label><br />
+<select id="country" name="country">
+
+  <optgroup>
+  <option value="US">United States</option>
+  <option value="CA" selected>Canada</option>
+  <option value="MX">Mexico</option>
+  </optgroup>
+
+  <optgroup label="Middle East">
+    <option value="EG">Eygpt</option>
+    <option value="KW">Kuwait</option>
+  </optgroup>
+</select> <br /> <br />
+
+<textarea name="blog_post" rows="10" cols="80" placeholder="Message"></textarea>
+
+<button>Submit</button>
+
+<input type="Submit" value="Submit"  />
+
+
+</form>
+
+
+
+</body>
+</html>
