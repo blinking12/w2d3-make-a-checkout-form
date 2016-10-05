@@ -6,29 +6,115 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Stylesheets go here. -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/form.css" />
 </head>
 <body>
 
-<form method="post" action="#" enctype="multipart/form-data">
+  <form  method="post" action="#" enctype="multipart/form-data">
 
-    <input type="hidden" name="type" value="tax form"  />
+    <div class="container">
 
-    <label for="first-name">First Name</label><br />
-    <input type="text" id="first-name" name="first_name" value="" placeholder="Example: First Name" required />
-<br />
-    <label>
-      First Name <br />
-      <input type="text" name="first_name" value="Troy" readonly />
-    </label>
-<br />
-<br />
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Contact Information
+        </div>
+        <div class="panel-body">
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="sr-only" for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" class="form-control"  />
+              </div>
+            </div>
+
+
+
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <label>
+                <input type="hidden" name="send-me-stuff" value="no" />
+                <input type="checkbox" name="send-me-stuff" value="yes"> Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="checkbox">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                  <label for="price">Price</label>
+                  <div
+                  <input type="text" id="price" name="price" class="form-control"  />
+                  <div class="inout-group-addon">
+                    .00</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+    <div class="form-group">
+      <label for="blog-post">Blog Post</label>
+      <textarea rows="10" class="form-control" id="blog_post"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select class="form-control" id="country" name="country"></select>
+      <option value="CA">Canada</option>
+      <option value="US selected>United States"</option>
+    </select>
+
+      </option>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6 text-right">
+    <div class="form-group">
+    <button class="btn btn-primary btn-lrg">Canel</button>
+    </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-sm-pull-6">
+    <div class="form-group">
+    <button class="btn btn-primary btn-lrg">Send</button>
+    </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- <input type="hidden" name="type" value="tax form"  />
+
+  <label for="first-name">First Name</label><br />
+  <input type="text" class="form-control" id="first-name" name="first_name" value="" placeholder="Example: First Name" required />
+  <br />
   <label>
-    <input type="hidden" name="optin" value="no"  />
-    <input type="checkbox" id="optin" name="optin" value="yes" checked />
-    Receive Spam Emails
-  </label>
+  First Name <br />
+  <input type="text" name="first_name" value="Troy" readonly />
+</label>
+<br />
+<br />
+<label>
+<input type="hidden" name="optin" value="no"  />
+<input type="checkbox" id="optin" name="optin" value="yes" checked />
+Receive Spam Emails
+</label>
 
 <h4>Which answer is correct?</h4>
 <label><input type="radio" name="quiz" value="a" checked/> A</label><br />
@@ -39,23 +125,23 @@
 <label for="country">Country</label><br />
 <select id="country" name="country">
 
-  <optgroup>
-  <option value="US">United States</option>
-  <option value="CA" selected>Canada</option>
-  <option value="MX">Mexico</option>
-  </optgroup>
+<optgroup>
+<option value="US">United States</option>
+<option value="CA" selected>Canada</option>
+<option value="MX">Mexico</option>
+</optgroup>
 
-  <optgroup label="Middle East">
-    <option value="EG">Eygpt</option>
-    <option value="KW">Kuwait</option>
-  </optgroup>
+<optgroup label="Middle East">
+<option value="EG">Eygpt</option>
+<option value="KW">Kuwait</option>
+</optgroup>
 </select> <br /> <br />
 
-<textarea name="blog_post" rows="10" cols="80" placeholder="Message"></textarea>
+<textarea name="blog_post" placeholder="Message"></textarea>
 
 <button>Submit</button>
 
-<input type="Submit" value="Submit"  />
+<input type="Submit" value="Submit"  /> -->
 
 
 </form>
